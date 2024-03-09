@@ -1,0 +1,11 @@
+
+
+            <a href="#">Inicio</a>
+            <a href="#">Estudiantes</a>
+            <a href="#">Profesores</a>
+            <a href="#">Cursos</a>
+            <a href="#">Matriculas</a>
+            <a href="#">Periodos</a>
+            <a href="#">Programas</a>
+            <a href="#">Precios</a>
+            <a href="#">Salones</a>
