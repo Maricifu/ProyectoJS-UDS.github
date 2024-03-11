@@ -83,8 +83,80 @@
             </nav>
             
             <section class="paginacion">
-                <div id="contenedor_principal" class="mc container-fluid">
-                    <p>HOlaaaa</p>
+                <!--Contenedores-->
+                <div id="contenedor_principal" class="mc container-fluid align-content-center text-center justify-content-center">
+                    <!--Contenedores Crear-->
+                    <div class="students container-fluid">
+                        <div id="formularioEstudiante"></div>
+                        <div id="buscarEstudiante"></div>
+                        <div id="borrarEstudiante"></div>
+                        <div id="mostrarEstudiantes"></div>
+                            <div id="botonesmostrar" style="display: none;">
+                                <button onclick="ocultartodo(), showstudents()">Listado Estudiantes</button>
+                            </div>
+                    </div>
+                    <div class="profesores container-fluid">
+                        <div id="mostrarProfesores"></div>
+                        <div id="formularioProfesor"></div>
+                        <div id="buscarProfesor"></div>
+                        <div id="borrarProfesor"></div>
+                            <div id="botonesmostrar" style="display: none;">
+                                <button onclick="ocultartodo(), showteachers()">Listado Profesores</button>
+                            </div>
+                    </div>
+                    <div class="asignaturas container-fluid">
+                        <div id="mostrarAsignaturas"></div>
+                        <div id="formularioAsignaturas"></div>
+                        <div id="buscarMatriculas"></div>
+                        <div id="borrarMatriculas"></div>
+                            <div id="botonesmostrar" style="display: none;">
+                                <button onclick="ocultartodo(), showAsignaturas()">Listado Asignaturas</button>
+                            </div>
+                    </div>
+                    <div class="matriculas container-fluid">
+                        <div id="mostrarMatriculas"></div>
+                        <div id="formularioMatriculas"></div>
+                        <div id="buscarMatriculas"></div>
+                        <div id="borrarMatriculas"></div>
+                            <div id="botonesmostrar" style="display: none;">
+                                <button onclick="ocultartodo(), showAsignaturas()">Listado Matriculas</button>
+                            </div>
+                    </div>
+                    <!--Contenedores Listar-->
+                    <div class="periodos container-fluid">
+                        <div id="mostrarPeriodos"></div>
+                            <div id="botonesmostrar" style="display: none;">
+                                <button onclick="ocultartodo(), showPeriodos()">Listado Periodos</button>
+                            </div>
+                    </div>
+                    <div class="programas container-fluid">
+                        <div id="mostrarProgramas"></div>
+                            <div id="botonesmostrar" style="display: none;">
+                                <button onclick="ocultartodo(), showProgramas()">Listado Programas</button>
+                            </div>
+                    </div>
+                    <div class="salones container-fluid">
+                        <div id="mostrarSalones"></div>
+                            <div id="botonesmostrar" style="display: none;">
+                                <button onclick="ocultartodo(), showSalones()">Listado Salones</button>
+                            </div>
+                    </div>
+                    <div class="departamentos container-fluid">
+                        <div id="mostrarDepartamentos"></div>
+                            <div id="botonesmostrar" style="display: none;">
+                                <button onclick="ocultartodo(), showDepartamentos()">Listado Departamentos</button>
+                            </div>
+                    </div>
+                    <div class="tarifas container-fluid">
+                        <div id="mostrarTarifas"></div>
+                            <div id="botonesmostrar" style="display: none;">
+                                <button onclick="ocultartodo(), showTarifas()">Listado Tarifas</button>
+                            </div>
+                    </div>
+                    <!--Contenedores Reportes-->
+                    <div id="reportehorario"></div>
+                    <div id="tablaresultados"></div>
+                    <div id="resultadosAsignaturasMM"></div>
                 </div>
             </section>
             
