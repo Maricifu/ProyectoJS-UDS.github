@@ -5,8 +5,21 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-/* Nav */
+/*main*/
+main.container-fluid {
+    width: 100%;
+    height: 120vh;
+    min-height: 600px;
+    max-height: 1200px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #ffffff;
+    background-color: #00010c;
+}
 
+
+/* Nav */
 .menu{
     background-color: #20021b;
     color: #fff;
@@ -105,20 +118,12 @@ body {
     width: 36px;
 }
 
-
-
-/*main*/
-main.container-fluid {
+/*HTML section*/
+div.mc.container-fluid{
     width: 100%;
-    height: 120vh;
-    min-height: 600px;
-    max-height: 1200px;
-    position: relative;
-    display: grid;
-    grid-template-rows: 100px 1fr;
-    color: #ffffff;
-    background-color: #00010c;
+    height: 100%;
 }
+
 
 
 /*Footer*/

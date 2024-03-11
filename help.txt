@@ -1,0 +1,27 @@
+//Funcionalidades del programa: 
+
+Crear:
+    -Estudiante
+    -Profesor
+    -Asignatura
+    -Matricula
+
+    Listar:
+        -Estudiante
+        -Profesor
+        -Asignatura
+        -Matricula
+
+
+Listar:
+    -Periodo
+    -Programas
+    -Salones
+    -Departamentos
+    -Tarifas
+
+
+Reportes:
+    -Horarios
+    -Matriculas creadas
+    -Asignaturas más matriculadas
