@@ -19,32 +19,49 @@
                     </div>
         
                     <ul class="menu__links">
+
                         <li class="menu__item">
-                            <a href="#" class="menu__link">Inicio</a>
+                            <a href="#" class="menu__link menu__itemm" data-route="home">Inicio</a>
                         </li>
-            
+
                         <li class="menu__item menu__item--show">
                             <a href="#" class="menu__link">Usuario <img src="resources/rowdown.svg" class="menu__arrow"></a>
-            
                             <ul class="menu__nesting">
                                 <li class="menu__inside">
-                                    <a href="#" id="boton_profesor" class="menu__link menu__link--inside">Profesor</a>
+                                    <a id="profesoresButton" class="menu__link menu__link--inside">Profesor</a>
                                 </li>
                                 <li class="menu__inside">
-                                    <a href="#" id="boton_estudiante" class="menu__link menu__link--inside">Estudiante</a>
+                                    <a id="crearEstudiante" class="menu__link menu__link--inside">Estudiante</a>
                                 </li>
                             </ul>
                         </li>
-            
+
+                        <li class="menu__item  menu__item--show">
+                            <a href="#" class="menu__link">UDS<img src="resources/rowdown.svg" class="menu__arrow"></a>
+                            <ul class="menu__nesting">
+                                <li class="menu__inside">
+                                    <a id="" class="menu__link menu__link--inside">Cursos</a>
+                                </li>
+                                <li class="menu__inside">
+                                    <a id="asignaturasButton" class="menu__link menu__link--inside">Asignaturas</a>
+                                </li>
+                                <li class="menu__inside">
+                                    <a id="matriculasButton" class="menu__link menu__link--inside">Matrículas</a>
+                                </li>
+                            </ul>
+                        </li>
+
                         <li class="menu__item  menu__item--show">
                             <a href="#" class="menu__link">Oferta académica<img src="resources/rowdown.svg" class="menu__arrow"></a>
-            
                             <ul class="menu__nesting">
                                 <li class="menu__inside">
                                     <a href="#" id="boton_periodos" class="menu__link menu__link--inside">Periodos</a>
                                 </li>
                                 <li class="menu__inside">
                                     <a href="#" id="boton_programas" class="menu__link menu__link--inside">Programas</a>
+                                </li>
+                                <li class="menu__inside">
+                                    <a href="#" class="menu__link menu__link--inside">Salones</a>
                                 </li>
                                 <li class="menu__inside">
                                     <a href="#" id="boton_departamentos" class="menu__link menu__link--inside">Departamentos</a>
@@ -56,20 +73,17 @@
                         </li>
 
                         <li class="menu__item  menu__item--show">
-                            <a href="#" class="menu__link">UDS<img src="resources/rowdown.svg" class="menu__arrow"></a>
+                            <a href="#" class="menu__link">Reportes<img src="resources/rowdown.svg" class="menu__arrow"></a>
             
                             <ul class="menu__nesting">
                                 <li class="menu__inside">
-                                    <a href="#" class="menu__link menu__link--inside">Cursos</a>
+                                    <a id="horarioEstudiante" class="menu__link menu__link--inside">Horarios</a>
                                 </li>
                                 <li class="menu__inside">
-                                    <a href="#" class="menu__link menu__link--inside">Salones</a>
+                                    <a id="totalMatri" class="menu__link menu__link--inside">Matriculas creadas</a>
                                 </li>
                                 <li class="menu__inside">
-                                    <a href="#" class="menu__link menu__link--inside">Asignaturas</a>
-                                </li>
-                                <li class="menu__inside">
-                                    <a href="#" class="menu__link menu__link--inside">Matrículas</a>
+                                    <a id="AsigMasMatriculada" class="menu__link menu__link--inside">Asignaturas más matricula</a>
                                 </li>
                             </ul>
                         </li>
@@ -85,6 +99,9 @@
             <section class="paginacion">
                 <!--Contenedores-->
                 <div id="contenedor_principal" class="mc container-fluid align-content-center text-center justify-content-center">
+                    <div id="main-content">
+                        <!-- Contenido inicio -->
+                    </div>
                     <!--Contenedores Crear-->
                     <div class="students container-fluid">
                         <div id="formularioEstudiante"></div>
@@ -97,7 +114,7 @@
                     </div>
                     <div class="profesores container-fluid">
                         <div id="mostrarProfesores"></div>
-                        <div id="formularioProfesor"></div>
+                        <div id="formularioProfesores"></div>
                         <div id="buscarProfesor"></div>
                         <div id="borrarProfesor"></div>
                             <div id="botonesmostrar" style="display: none;">
@@ -147,6 +164,12 @@
                                 <button onclick="ocultartodo(), showDepartamentos()">Listado Departamentos</button>
                             </div>
                     </div>
+                    <div class="cursos container-fluid">
+                        <div id="mostrarCursos"></div>
+                            <div id="botonesmostrar" style="display: none;">
+                                <button onclick="ocultartodo(), showCursos()">Listado Cursos</button>
+                            </div>
+                    </div>
                     <div class="tarifas container-fluid">
                         <div id="mostrarTarifas"></div>
                             <div id="botonesmostrar" style="display: none;">
@@ -159,9 +182,9 @@
                     <div id="resultadosAsignaturasMM"></div>
                 </div>
             </section>
-            
         </main>
 
+        <!--Footer-->
         <footer class="footer">
             <div class="waves">
             <div class="wave" id="wave1"></div>
@@ -197,10 +220,10 @@
         <script src="/js/main.js"></script>
         <script src="/js/menu.js"></script>
         <script src="/js/app.js"></script>
+        <script src="js/inicio.js"></script>
         <script src="js/cursos.js"></script>
         <script src="js/estudiantes.js"></script>
         <script src="js/departamentos.js"></script>
-
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </body>

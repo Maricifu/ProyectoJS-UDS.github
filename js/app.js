@@ -99,7 +99,7 @@ document.getElementById('mostrarrestudiantes').addEventListener('click', functio
 
   });
   
-  document.getElementById('CrearEstudiante').addEventListener('click', function() {
+  document.getElementById('crearEstudiante').addEventListener('click', function() {
     ocultartodo();
     formulario();
     buscarEstudianteIDform();
@@ -110,7 +110,7 @@ document.getElementById('mostrarrestudiantes').addEventListener('click', functio
     buscarestudianteID.style.display="block"
   });
   
-  document.getElementById('Profesoresbutton').addEventListener('click', function(){
+  document.getElementById('profesoresButton').addEventListener('click', function(){
     ocultartodo();
     BorrarProfesorForm();
     buscarProfeporIdform();
@@ -121,7 +121,7 @@ document.getElementById('mostrarrestudiantes').addEventListener('click', functio
     borrarProfesorbyid.style.display="block"
   })
  
-  document.getElementById('Asignaturasbutton').addEventListener('click', function() {
+  document.getElementById('asignaturasButton').addEventListener('click', function() {
     ocultartodo();
      formularioAsignaturas();
      llenarFormularioCursos(cursos);
@@ -136,7 +136,7 @@ document.getElementById('mostrarrestudiantes').addEventListener('click', functio
      borrarasig.style.display="block";
   });
 
-  document.getElementById('matriculasbutton').addEventListener('click', function(){
+  document.getElementById('matriculasButton').addEventListener('click', function(){
     ocultartodo();
     formularioMatriculas();
     BuscarMatriculabyidform();
@@ -154,14 +154,14 @@ document.getElementById('mostrarrestudiantes').addEventListener('click', functio
     botonmostrarrestoo.style.display="block"
   })
   
-  document.getElementById('horarioestudiante').addEventListener('click', function(){
+  document.getElementById('horarioEstudiante').addEventListener('click', function(){
     ocultartodo();
     horario.style.display="block"
 
     Genrarhorarioforzm()
   })
 
-  document.getElementById("totalmatri").addEventListener('click', function(){
+  document.getElementById("totalMatri").addEventListener('click', function(){
     ocultartodo();
     mostrarResultadosEnTexto(matriculas, periodos);
     tablaresultadoss.style.display="block"

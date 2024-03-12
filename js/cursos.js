@@ -1,5 +1,5 @@
-const showcursos = () => {
-    const mostrarcursos = document.getElementById("mostrarcursos");
+const showCursos = () => {
+    const mostrarcursos = document.getElementById("mostrarCursos");
 
     mostrarcursos.innerHTML = "";
 

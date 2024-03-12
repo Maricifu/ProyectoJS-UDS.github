@@ -1,7 +1,7 @@
 const formularioprofe = document.querySelector("#formularioProfesores");
 const mostrarprofes = document.querySelector("#mostrarProfesores");
-const profesearchid= document.querySelector("#BuscarProfesorporID")
-const profedelete= document.querySelector("#BorrarProfesorPorID")
+const profesearchid= document.querySelector("#buscarProfesor")
+const profedelete= document.querySelector("#borrarProfesor")
 
     class Profesor {
       constructor(id, tipo_documento, numero_documento, nombre, apellido, departamento_id) {

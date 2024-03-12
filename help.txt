@@ -14,7 +14,7 @@ Crear:
 
 
 Listar:
-    -Periodo
+    -Periodos
     -Programas
     -Salones
     -Departamentos
