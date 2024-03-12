@@ -669,6 +669,19 @@
       "fecha_nacimiento": "2006-10-25",
       "sexo": "Hombre",
       "programa_id": "7"
+    },
+    {
+      "id": "22",
+      "tipo_documento": "C.C",
+      "numero_documento": "13442423424234",
+      "nombre": "mariana",
+      "apellido": "cifuentes",
+      "ciudad_residencia": "bucaramanga",
+      "direccion": "232323",
+      "telefono": "3242342342342",
+      "fecha_nacimiento": "2024-03-01",
+      "sexo": "Mujer",
+      "programa_id": "3"
     }
   ],
   "x  os": [
