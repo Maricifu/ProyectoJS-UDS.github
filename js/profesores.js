@@ -3,22 +3,23 @@ const mostrarprofes = document.querySelector("#mostrarProfesores");
 const profesearchid= document.querySelector("#BuscarProfesorporID")
 const profedelete= document.querySelector("#BorrarProfesorPorID")
 
-    class Profesor {
-      constructor(id, tipo_documento, numero_documento, nombre, apellido, departamento_id) {
-          this.id = id;
-          this.tipo_documento = tipo_documento;
-          this.numero_documento = numero_documento;
-          this.nombre = nombre;
-          this.apellido= apellido
-          this.departamento_id = departamento_id;
-      }
-  }
+class Profesor {
+    constructor(id, tipo_documento, numero_documento, nombre, apellido, departamento_id) {
+        this.id = id;
+        this.tipo_documento = tipo_documento;
+        this.numero_documento = numero_documento;
+        this.nombre = nombre;
+        this.apellido= apellido
+        this.departamento_id = departamento_id;
+    }
+}
 
-  const showteachers = () => {
+const showteachers = () => {
     const mostrarProfesBloque = document.getElementById("mostrarProfesores");
     mostrarProfesBloque.innerHTML = "";
 
     let resultText = "<h2>Lista de Profesores:</h2>";
+    resultText += '<img src="/resources/develop.svg" alt="Coding Image" style="width: 200px; height: auto; margin-bottom: 20px;">';
     resultText += '<table class="table table-bordered">';
     resultText += '<thead><tr><th>ID</th><th>Nombre</th><th>Tipo Documento</th><th>Número Doc</th><th>Departamento ID</th></tr></thead><tbody>';
 
@@ -80,6 +81,7 @@ const formularioprofes=()=>{
     <div id="botonsubir">
         <button id="submitBtn" class="btn btn-primary" onclick="CrearProfesor();">Crear</button>
     </div>
+    
 </form>
     `
     formularioprofe.append(div)

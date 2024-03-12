@@ -96,7 +96,6 @@ const ocultartodo=()=>{
 document.getElementById('mostrarestudiantes').addEventListener('click', function() {
     ocultartodo();
     botonmostrarcosas.style.display="block"
-
   });
   
   document.getElementById('CrearEstudiante').addEventListener('click', function() {

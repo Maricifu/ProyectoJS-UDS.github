@@ -42,6 +42,7 @@ const showmatriculas = () => {
   mostrarMatriculasBloque.innerHTML = "";
 
   let resultText = "<h2>Lista de Matrículas:</h2>";
+  resultText += '<img src="/resources/develop.svg" alt="Coding Image" style="width: 200px; height: auto; margin-bottom: 20px;">';
   resultText += '<table class="table table-bordered">';
   resultText += '<thead><tr><th>ID</th><th>Estudiante ID</th><th>Asignatura ID</th><th>Precio</th></tr></thead><tbody>';
 
