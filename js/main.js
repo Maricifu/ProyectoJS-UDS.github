@@ -8,7 +8,6 @@ let cursos= [];
 let tarifas=[];
 let periodos= [];
 let matriculas= [];
-const totalMatriculasPorPeriodo = calcularTotalMatriculasPorPeriodo(matriculas, periodos, tarifas);
 
 
 fetch("http://localhost:3000/tarifas")

@@ -63,6 +63,7 @@ const tablaresultadoss= document.getElementById("tablaResultados")
 const horario = document.getElementById("reportehorario")
 const asignamasmatri= document.getElementById("resultadoAsignaturasMasMatriculadas")
 
+
 const ocultartodo=()=>{
   estudianteslistabloque.style.display= "none"
   formulariobloque.style.display="none"
@@ -93,9 +94,12 @@ const ocultartodo=()=>{
   asignamasmatri.style.display="none"
 }
 
+
+
 document.getElementById('mostrarestudiantes').addEventListener('click', function() {
     ocultartodo();
     botonmostrarcosas.style.display="block"
+
   });
   
   document.getElementById('CrearEstudiante').addEventListener('click', function() {
@@ -147,11 +151,7 @@ document.getElementById('mostrarestudiantes').addEventListener('click', function
     borrarmatri.style.display="block";
   })
 
-  document.getElementById('mostrartodobutton').addEventListener('click', function(){
-    ocultartodo();
-    
-    botonmostrarrestoo.style.display="block"
-  })
+ 
   
   document.getElementById('horarioestudiante').addEventListener('click', function(){
     ocultartodo();
