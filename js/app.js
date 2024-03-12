@@ -93,13 +93,13 @@ const ocultartodo=()=>{
   asignamasmatri.style.display="none"
 }
 
-document.getElementById('mostrarrestudiantes').addEventListener('click', function() {
+document.getElementById('mostrarestudiantes').addEventListener('click', function() {
     ocultartodo();
     botonmostrarcosas.style.display="block"
 
   });
   
-  document.getElementById('crearEstudiante').addEventListener('click', function() {
+  document.getElementById('CrearEstudiante').addEventListener('click', function() {
     ocultartodo();
     formulario();
     buscarEstudianteIDform();
@@ -110,7 +110,7 @@ document.getElementById('mostrarrestudiantes').addEventListener('click', functio
     buscarestudianteID.style.display="block"
   });
   
-  document.getElementById('profesoresButton').addEventListener('click', function(){
+  document.getElementById('Profesoresbutton').addEventListener('click', function(){
     ocultartodo();
     BorrarProfesorForm();
     buscarProfeporIdform();
@@ -120,23 +120,23 @@ document.getElementById('mostrarrestudiantes').addEventListener('click', functio
     buscarprofebyid.style.display="block"
     borrarProfesorbyid.style.display="block"
   })
- 
-  document.getElementById('asignaturasButton').addEventListener('click', function() {
-    ocultartodo();
-     formularioAsignaturas();
-     llenarFormularioCursos(cursos);
-     llenarFormularioProfesoresformulario(teachers);
-     llenarFormularioProgramasasignaturas(programas);
-     llenarFormularioSalonesasignaturas(salones)
-     buscarasignaturaporidform();
-     BorrarAsignaturaform();
 
-     formularioasig.style.display="flex";
-     buscarasig.style.display="block";
-     borrarasig.style.display="block";
+  document.getElementById('Asignaturasbutton').addEventListener('click', function() {
+    ocultartodo();
+    formularioAsignaturas();
+    llenarFormularioCursos(cursos);
+    llenarFormularioProfesoresformulario(teachers);
+    llenarFormularioProgramasasignaturas(programas);
+    llenarFormularioSalonesasignaturas(salones)
+    buscarasignaturaporidform();
+    BorrarAsignaturaform();
+
+    formularioasig.style.display="flex";
+    buscarasig.style.display="block";
+    borrarasig.style.display="block";
   });
 
-  document.getElementById('matriculasButton').addEventListener('click', function(){
+  document.getElementById('matriculasbutton').addEventListener('click', function(){
     ocultartodo();
     formularioMatriculas();
     BuscarMatriculabyidform();
@@ -154,14 +154,14 @@ document.getElementById('mostrarrestudiantes').addEventListener('click', functio
     botonmostrarrestoo.style.display="block"
   })
   
-  document.getElementById('horarioEstudiante').addEventListener('click', function(){
+  document.getElementById('horarioestudiante').addEventListener('click', function(){
     ocultartodo();
     horario.style.display="block"
 
     Genrarhorarioforzm()
   })
 
-  document.getElementById("totalMatri").addEventListener('click', function(){
+  document.getElementById("totalmatri").addEventListener('click', function(){
     ocultartodo();
     mostrarResultadosEnTexto(matriculas, periodos);
     tablaresultadoss.style.display="block"

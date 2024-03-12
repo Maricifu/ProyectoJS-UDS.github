@@ -1,10 +1,10 @@
 //Funcionalidades del programa: 
 
 Crear:
-    -Estudiante
-    -Profesor
-    -Asignatura
-    -Matricula
+    -Estudiante :D
+    -Profesor :D
+    -Asignatura :D
+    -Matricula :D
 
     Listar:
         -Estudiante

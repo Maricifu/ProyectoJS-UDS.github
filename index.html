@@ -28,10 +28,10 @@
                             <a href="#" class="menu__link">Usuario <img src="resources/rowdown.svg" class="menu__arrow"></a>
                             <ul class="menu__nesting">
                                 <li class="menu__inside">
-                                    <a id="profesoresButton" class="menu__link menu__link--inside">Profesor</a>
+                                    <a href="#" id="Profesoresbutton" class="menu__link menu__link--inside">Profesor</a>
                                 </li>
                                 <li class="menu__inside">
-                                    <a id="crearEstudiante" class="menu__link menu__link--inside">Estudiante</a>
+                                    <a href="#" id="CrearEstudiante" class="menu__link menu__link--inside">Estudiante</a>
                                 </li>
                             </ul>
                         </li>
@@ -40,13 +40,28 @@
                             <a href="#" class="menu__link">UDS<img src="resources/rowdown.svg" class="menu__arrow"></a>
                             <ul class="menu__nesting">
                                 <li class="menu__inside">
-                                    <a id="" class="menu__link menu__link--inside">Cursos</a>
+                                    <a href="#" id="Asignaturasbutton" class="menu__link menu__link--inside">Asignaturas</a>
                                 </li>
                                 <li class="menu__inside">
-                                    <a id="asignaturasButton" class="menu__link menu__link--inside">Asignaturas</a>
+                                    <a href="#" id="matriculasbutton" class="menu__link menu__link--inside">Matrículas</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="menu__item  menu__item--show">
+                            <a href="#" class="menu__link">Info<img src="resources/rowdown.svg" class="menu__arrow"></a>
+                            <ul class="menu__nesting">
+                                <li class="menu__inside">
+                                    <a href="#" class="menu__link menu__link--inside" onclick="ocultartodoz(), showstudents()">Listar estudiantes</a>
                                 </li>
                                 <li class="menu__inside">
-                                    <a id="matriculasButton" class="menu__link menu__link--inside">Matrículas</a>
+                                    <a href="#" class="menu__link menu__link--inside" onclick="ocultartodoz(), showteachers()">Listar Profesores</a>
+                                </li>
+                                <li class="menu__inside">
+                                    <a href="#" class="menu__link menu__link--inside" onclick="ocultartodoz(), showAsignaturas()">Listar asignaturas</a>
+                                </li>
+                                <li class="menu__inside">
+                                    <a href="#" class="menu__link menu__link--inside" onclick="ocultartodoz(), showmatriculas()">Listar matrículas</a>
                                 </li>
                             </ul>
                         </li>
@@ -55,19 +70,19 @@
                             <a href="#" class="menu__link">Oferta académica<img src="resources/rowdown.svg" class="menu__arrow"></a>
                             <ul class="menu__nesting">
                                 <li class="menu__inside">
-                                    <a href="#" id="boton_periodos" class="menu__link menu__link--inside">Periodos</a>
+                                    <a href="#" id="boton_periodos" class="menu__link menu__link--inside" onclick="ocultaartodo(), showperiodos()">Periodos</a>
                                 </li>
                                 <li class="menu__inside">
-                                    <a href="#" id="boton_programas" class="menu__link menu__link--inside">Programas</a>
+                                    <a href="#" id="boton_programas" class="menu__link menu__link--inside" onclick="ocultaartodo(), showProgramas()">Programas</a>
                                 </li>
                                 <li class="menu__inside">
-                                    <a href="#" class="menu__link menu__link--inside">Salones</a>
+                                    <a href="#" class="menu__link menu__link--inside" onclick="ocultaartodo(), showsalones()">Salones</a>
                                 </li>
                                 <li class="menu__inside">
-                                    <a href="#" id="boton_departamentos" class="menu__link menu__link--inside">Departamentos</a>
+                                    <a href="#" id="boton_departamentos" class="menu__link menu__link--inside" onclick="ocultaartodo(), showdepartamentos()">Departamentos</a>
                                 </li>
                                 <li class="menu__inside">
-                                    <a href="#" class="menu__link menu__link--inside">Tarifas</a>
+                                    <a href="#" class="menu__link menu__link--inside" onclick="ocultaartodo(), showtarifas()">Tarifas</a>
                                 </li>
                             </ul>
                         </li>
@@ -77,13 +92,13 @@
             
                             <ul class="menu__nesting">
                                 <li class="menu__inside">
-                                    <a id="horarioEstudiante" class="menu__link menu__link--inside">Horarios</a>
+                                    <a href="#" id="horarioestudiante" class="menu__link menu__link--inside">Horarios</a>
                                 </li>
                                 <li class="menu__inside">
-                                    <a id="totalMatri" class="menu__link menu__link--inside">Matriculas creadas</a>
+                                    <a href="#" id="totalmatri" class="menu__link menu__link--inside">Matriculas creadas</a>
                                 </li>
                                 <li class="menu__inside">
-                                    <a id="AsigMasMatriculada" class="menu__link menu__link--inside">Asignaturas más matricula</a>
+                                    <a href="#" id="AsigMasMatriculada" class="menu__link menu__link--inside">Asignaturas más matricula</a>
                                 </li>
                             </ul>
                         </li>
@@ -92,97 +107,73 @@
                     <div class="menu__hamburguer">
                         <img src="resources/hamburguesa.svg" class="menu__img">
                     </div>
-                    
                 </section>
             </nav>
-            
+
+
+
+
+
+
             <section class="paginacion">
                 <!--Contenedores-->
                 <div id="contenedor_principal" class="mc container-fluid align-content-center text-center justify-content-center">
                     <div id="main-content">
                         <!-- Contenido inicio -->
                     </div>
-                    <!--Contenedores Crear-->
-                    <div class="students container-fluid">
-                        <div id="formularioEstudiante"></div>
-                        <div id="buscarEstudiante"></div>
-                        <div id="borrarEstudiante"></div>
-                        <div id="mostrarEstudiantes"></div>
+                        <div id="contenido">
                             <div id="botonesmostrar" style="display: none;">
-                                <button onclick="ocultartodo(), showstudents()">Listado Estudiantes</button>
+                                <div id="mostrarestudiantes" style="width: 50%;"></div>
                             </div>
-                    </div>
-                    <div class="profesores container-fluid">
-                        <div id="mostrarProfesores"></div>
-                        <div id="formularioProfesores"></div>
-                        <div id="buscarProfesor"></div>
-                        <div id="borrarProfesor"></div>
-                            <div id="botonesmostrar" style="display: none;">
-                                <button onclick="ocultartodo(), showteachers()">Listado Profesores</button>
+
+                            <div id="formularioestudiante"></div>
+                            <div id="Buscarestudianteporid"></div>
+                            <div id="BorrarEstudiantePorID"></div>
+
+                            <div id="mostrarProfesores"></div>
+                            <div id="formularioProfesores"></div>
+                            <div id="BuscarProfesorporID"></div>
+                            <div id="BorrarProfesorPorID"></div>
+                
+                            <div id="mostrarasignaturas"></div>
+                            <div id="formularioasignaturas" style="display: flex;justify-content: space-evenly;align-content: stretch;flex-direction: column;"></div>
+                            <div id="buscarmatriculasporid"></div>
+                            <div id="BorrarMatriculasPorId"></div>
+                
+                            <div id="MostrarMatriculas"></div>
+                            <div id="FormularioMatriculas" style="display: flex;justify-content: space-evenly;align-content: stretch;flex-direction: column;" ></div>
+                            <div id="BuscarMatriculas"></div>
+                            <div id="BorrarMatriculaPorId"></div>
+
+                            <div id="botonesmostrarResto" style="display: none;" >
+                                <div id="mostrarperiodos"></div>    
+                                <div id="mostrarprogramas"></div>
+                                <div id="mostrarcursos"></div>
+                                <div id="mostrartarifas"></div>
+                                <div id="mostrarsalones"></div>
+                                <div id="mostrardepartamentos"></div>                                 
                             </div>
-                    </div>
-                    <div class="asignaturas container-fluid">
-                        <div id="mostrarAsignaturas"></div>
-                        <div id="formularioAsignaturas"></div>
-                        <div id="buscarMatriculas"></div>
-                        <div id="borrarMatriculas"></div>
-                            <div id="botonesmostrar" style="display: none;">
-                                <button onclick="ocultartodo(), showAsignaturas()">Listado Asignaturas</button>
-                            </div>
-                    </div>
-                    <div class="matriculas container-fluid">
-                        <div id="mostrarMatriculas"></div>
-                        <div id="formularioMatriculas"></div>
-                        <div id="buscarMatriculas"></div>
-                        <div id="borrarMatriculas"></div>
-                            <div id="botonesmostrar" style="display: none;">
-                                <button onclick="ocultartodo(), showAsignaturas()">Listado Matriculas</button>
-                            </div>
-                    </div>
-                    <!--Contenedores Listar-->
-                    <div class="periodos container-fluid">
-                        <div id="mostrarPeriodos"></div>
-                            <div id="botonesmostrar" style="display: none;">
-                                <button onclick="ocultartodo(), showPeriodos()">Listado Periodos</button>
-                            </div>
-                    </div>
-                    <div class="programas container-fluid">
-                        <div id="mostrarProgramas"></div>
-                            <div id="botonesmostrar" style="display: none;">
-                                <button onclick="ocultartodo(), showProgramas()">Listado Programas</button>
-                            </div>
-                    </div>
-                    <div class="salones container-fluid">
-                        <div id="mostrarSalones"></div>
-                            <div id="botonesmostrar" style="display: none;">
-                                <button onclick="ocultartodo(), showSalones()">Listado Salones</button>
-                            </div>
-                    </div>
-                    <div class="departamentos container-fluid">
-                        <div id="mostrarDepartamentos"></div>
-                            <div id="botonesmostrar" style="display: none;">
-                                <button onclick="ocultartodo(), showDepartamentos()">Listado Departamentos</button>
-                            </div>
-                    </div>
-                    <div class="cursos container-fluid">
-                        <div id="mostrarCursos"></div>
-                            <div id="botonesmostrar" style="display: none;">
-                                <button onclick="ocultartodo(), showCursos()">Listado Cursos</button>
-                            </div>
-                    </div>
-                    <div class="tarifas container-fluid">
-                        <div id="mostrarTarifas"></div>
-                            <div id="botonesmostrar" style="display: none;">
-                                <button onclick="ocultartodo(), showTarifas()">Listado Tarifas</button>
-                            </div>
-                    </div>
-                    <!--Contenedores Reportes-->
-                    <div id="reportehorario"></div>
-                    <div id="tablaresultados"></div>
-                    <div id="resultadosAsignaturasMM"></div>
+                            
+                            <div id="reportehorario"></div>
+                            <div id="tablaResultados"></div>
+                            <div id="resultadoAsignaturasMasMatriculadas" style="display: none;"></div>
+                        </div>
                 </div>
             </section>
         </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <!--Footer-->
         <footer class="footer">
@@ -221,9 +212,12 @@
         <script src="/js/menu.js"></script>
         <script src="/js/app.js"></script>
         <script src="js/inicio.js"></script>
-        <script src="js/cursos.js"></script>
-        <script src="js/estudiantes.js"></script>
-        <script src="js/departamentos.js"></script>
+        <script src="./js/Listar.js"></script>
+        <script src="./js/reportes.js"></script>
+        <script src="./js/matriculas.js"></script>
+        <script src="./js/students.js"></script>
+        <script src="./js/asiganaturas.js"></script>
+        <script src="./js/profesores.js"></script>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </body>

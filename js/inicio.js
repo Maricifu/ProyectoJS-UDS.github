@@ -15,8 +15,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     menuItems.forEach(item => {
         item.addEventListener('click', function() {
-            const route = this.getAttribute('data-route');
-            loadContent(route);
+            const route = this.dataset.route;
+            ocultartodo(); // Oculta todo antes de mostrar la nueva página
+            loadContent(route); // Cargar el contenido de la nueva página
         });
     });
 });

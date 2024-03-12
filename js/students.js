@@ -1,7 +1,7 @@
-const formularioEstudiantes = document.querySelector("#formularioEstudiante");
-const mostrarestudiantes = document.querySelector("#mostrarEstudiantes");
-const estudiantesearchid= document.querySelector("#buscarEstudiante")
-const estudiantedelete= document.querySelector("#borrarEstudiante")
+const formularioEstudiantes = document.querySelector("#formularioestudiante");
+const mostrarestudiantes = document.querySelector("#mostrarestudiantes");
+const estudiantesearchid= document.querySelector("#Buscarestudianteporid")
+const estudiantedelete= document.querySelector("#BorrarEstudiantePorID")
 
 function llenarFormulario(programas) {
   const inputIdPrograma = document.getElementById("Inputidprograma");
@@ -35,7 +35,7 @@ function llenarFormulario(programas) {
 
 
 const showstudents = () => {
-    const mostrarestudiantes = document.getElementById("mostrarEstudiantes");
+    const mostrarestudiantes = document.getElementById("mostrarestudiantes");
     mostrarestudiantes.innerHTML = ""; // Limpia el contenido anterior
 
     let resultText = "<h2>Lista de Estudiantes:</h2>";

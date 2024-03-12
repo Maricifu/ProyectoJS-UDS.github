@@ -72,10 +72,10 @@ fetch("http://localhost:3000/departamentos")
 fetch("http://localhost:3000/programas")
     .then(response => response.json())
     .then(datass => {
-      programas=datass;
+    programas=datass;
     })
     .catch(error => {
-      console.error('Error al obtener datos de programas:', error);
+    console.error('Error al obtener datos de programas:', error);
       throw error; // Propaga el error para manejarlo en el código que llame a esta función
 });
 
