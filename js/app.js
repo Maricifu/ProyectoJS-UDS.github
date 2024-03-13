@@ -105,8 +105,9 @@ document.getElementById('botonsmostrarinicio').addEventListener('click', functio
 });
 
 
-document.getElementById('mostrarestudiantes').addEventListener('click', function() {
+document.getElementById('mostrarestudiantesb').addEventListener('click', function() {
     ocultartodo();
+    showstudents()
     botonmostrarcosas.style.display="block"
 
   });

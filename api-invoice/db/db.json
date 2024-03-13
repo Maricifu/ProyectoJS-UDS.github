@@ -459,6 +459,14 @@
       "nombre": "Carolina",
       "apellido": "Paredes",
       "departamento_id": 6
+    },
+    {
+      "id": "100",
+      "tipo_documento": "C.C",
+      "numero_documento": "C.C",
+      "nombre": "camiloo",
+      "apellido": "profee",
+      "departamento_id": "1"
     }
   ],
   "alumnos": [
@@ -695,6 +703,19 @@
       "fecha_nacimiento": "2005-04-30",
       "sexo": "Mujer",
       "programa_id": "1"
+    },
+    {
+      "id": "100",
+      "tipo_documento": "C.C",
+      "numero_documento": "521205155",
+      "nombre": "camilo",
+      "apellido": "profe",
+      "ciudad_residencia": "bucaramanga",
+      "direccion": "122121",
+      "telefono": "2125412",
+      "fecha_nacimiento": "2024-03-12",
+      "sexo": "Hombre",
+      "programa_id": "8"
     }
   ],
   "x  os": [
@@ -1410,6 +1431,22 @@
           "salon_id": "18"
         }
       ]
+    },
+    {
+      "id": "100",
+      "curso_id": "2",
+      "codigo": "undefined-PRE-2024",
+      "creditos": "121",
+      "profesor_id": "100",
+      "cupos_disponibles": "1212",
+      "programa_id": "1",
+      "horario_clases": [
+        {
+          "dia": "Miercoles",
+          "hora": "8:00am-10:00am",
+          "salon_id": "5"
+        }
+      ]
     }
   ],
   "matriculas": [
@@ -1622,6 +1659,13 @@
       "asignatura_id": "7",
       "periodo_id": 2,
       "precio": 4000
+    },
+    {
+      "id": "100",
+      "estudiante_id": "100",
+      "asignatura_id": "6",
+      "periodo_id": 2,
+      "precio": null
     }
   ]
 }
