@@ -682,6 +682,19 @@
       "fecha_nacimiento": "2024-03-01",
       "sexo": "Mujer",
       "programa_id": "3"
+    },
+    {
+      "id": "20",
+      "tipo_documento": "C.C",
+      "numero_documento": "1034398317",
+      "nombre": "Mariana",
+      "apellido": "Ramìrez",
+      "ciudad_residencia": "bucaramanga",
+      "direccion": "232323",
+      "telefono": "3123170127",
+      "fecha_nacimiento": "2005-04-30",
+      "sexo": "Mujer",
+      "programa_id": "1"
     }
   ],
   "x  os": [

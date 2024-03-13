@@ -39,7 +39,6 @@ const showstudents = () => {
     mostrarestudiantes.innerHTML = ""; // Limpia el contenido anterior
 
     let resultText = "<h2>Lista de Estudiantes:</h2>";
-    resultText += '<img src="/resources/coding.svg" alt="Coding Image" style="width: 200px; height: auto; margin-bottom: 20px;">';
     resultText += '<table class="table table-bordered">';
     resultText += '<thead><tr><th>id</th><th>nombre</th><th>Tipo Documento</th><th>Numero Doc</th><th>ciudad</th><th>Direccion</th><th>telefono</th><th>cumpleanños</th><th>Genero</th><th>programa</th></tr></thead><tbody>';
     students.forEach(estudiante => {

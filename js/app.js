@@ -31,6 +31,8 @@ const ocultaartodo=()=>{
   listadodepartamentos.style.display="none"
 }
 
+const paginicio= document.getElementById("main-content")
+
 const formulariobloque= document.getElementById("formularioestudiante")
 const estudianteslistabloque= document.getElementById("mostrarestudiantes")
 const buscarestudianteID= document.getElementById("Buscarestudianteporid")
@@ -92,8 +94,15 @@ const ocultartodo=()=>{
   tablaresultadoss.style.display="none"
   horario.style.display="none"
   asignamasmatri.style.display="none"
+  paginicio.style.display="none"
 }
 
+
+document.getElementById('botonsmostrarinicio').addEventListener('click', function () {
+  ocultartodo();
+  paginicio.style.display="block"
+
+});
 
 
 document.getElementById('mostrarestudiantes').addEventListener('click', function() {

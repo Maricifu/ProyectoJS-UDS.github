@@ -1,6 +1,6 @@
 // Definición de rutas y contenido de cada sección
 const routes = {
-    home: `<img src="/resources/uds.png" style="width: 38vw; height: auto; margin-bottom: 50px;"><p style="font-size: 1.3rem;">En la UDS estamos comprometidos con el desarrllo integral de nuestros estudiantes.</p><img src="/resources/coding.svg">`,
+    home: `<img src="/resources/uds.png" style="width: 30vw; height: auto; margin-bottom: 50px;"><p style="font-size: 1.3rem;">En la UDS estamos comprometidos con el desarrllo integral de nuestros estudiantes.</p><img src="/resources/coding.svg" style="width: 25vw; height: auto;">`,
 };
 
 // Función para cargar el contenido de la ruta especificada en el contenedor principal
@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
     menuItems.forEach(item => {
         item.addEventListener('click', function() {
             const route = this.dataset.route;
-            ocultartodo(); // Oculta todo antes de mostrar la nueva página
             loadContent(route); // Cargar el contenido de la nueva página
         });
     });
